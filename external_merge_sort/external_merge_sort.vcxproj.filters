@@ -29,10 +29,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="chtoto.cpp">
+    <ClCompile Include="sort_utils.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="sort.h">
+    <ClCompile Include="sort_utils.h">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
   </ItemGroup>

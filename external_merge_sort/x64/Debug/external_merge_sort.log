@@ -1,5 +1,11 @@
-﻿  Sequence.cpp
-  chtoto.cpp
-  sort.h
+﻿  Проверка источников на наличие зависимостей модуля…
+  sort_utils.h
+  Компиляция…
+  sort_utils.h
+E:\с# CODES\external_merge_sort\external_merge_sort\sort_utils.h(7,11): warning C5260: постоянная переменная "TAPE_COUNT" имеет внутреннюю связь в контексте включенного файла заголовка, но внешнее связывание в контексте импортированного блока заголовка; рекомендуется также объявить его "встроенным", если он будет совместно использоваться в единицах трансляции, или "статическим", чтобы выразить намерение использовать его локально в этой единице трансляции
+  main.cpp
+  sort_utils.cpp
+E:\с# CODES\external_merge_sort\external_merge_sort\sort_utils.cpp(9,25): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\с# CODES\external_merge_sort\external_merge_sort\sort_utils.cpp(87,25): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
   Создание кода...
   external_merge_sort.vcxproj -> E:\с# CODES\external_merge_sort\x64\Debug\external_merge_sort.exe

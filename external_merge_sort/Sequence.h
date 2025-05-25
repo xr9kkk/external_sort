@@ -7,19 +7,34 @@
 
 //const int n = 3;
 
-struct Sequence
-{
-	std::fstream file;
+//struct Sequence
+//{
+//	std::fstream file;
+//
+//
+//	Elem elem; //заменить на структуру
+//	bool eof, eor; //eor - принзак конца серии 
+//	void read_next();
+//	void star_read(std::string filename);
+//	void star_write(std::string filename);
+//	void close();
+//	void copy(Sequence& x);
+//	void copy_run(Sequence& x);
+//};
 
+class Sequence {
+public:
+    std::fstream file;
+    Elem elem;
+    bool eof;  // Конец файла
+    bool eor;  // Конец серии
 
-	Elem elem; //заменить на структуру
-	bool eof, eor; //eor - принзак конца серии 
-	void read_next();
-	void star_read(std::string filename);
-	void star_write(std::string filename);
-	void close();
-	void copy(Sequence& x);
-	void copy_run(Sequence& x);
+    Sequence();
+    void open_read(const std::string& filename);
+    void open_write(const std::string& filename);
+    void close();
+    void read_next();
+    void write_element(const Elem& e, bool end_series = false);
 };
 
 
@@ -27,7 +42,7 @@ struct Sequence
 
 //у меня должен быть массив файлов. потому что многопутевая 
 //sequence можно называть файлом
-//
+
 //void distribute(Sequence& f1, Sequence& f2, Sequence& f0, std::string filename) //здесь у каплиевой два файла, потому что двухпутевое, а у меня должен быть массив файлов
 //{
 //	f0.star_read(filename);
@@ -115,9 +130,9 @@ struct Sequence
 //	remove("f2.txt");
 //	//у меня для массива файлов 
 //} 
-//
-////нужно написать функцию, которая создает случайный файл filename
-////нужно написать функцию check_file, которая проверяет, что файл упорядочен, должна считать количество чисел, которое получается в файле, если что то неправильно
-////то в результирующем файлике будет меньше чисел, чем в том, который изначально был
-////в мейне должно быть create, sort, check и больше ничего не должно быть
-////должно быть i, которая идет по кольцу, то есть для трех файлов i = (i+1)%3 до тех пор, пока f0 не закончится
+
+//нужно написать функцию, которая создает случайный файл filename
+//нужно написать функцию check_file, которая проверяет, что файл упорядочен, должна считать количество чисел, которое получается в файле, если что то неправильно
+//то в результирующем файлике будет меньше чисел, чем в том, который изначально был
+//в мейне должно быть create, sort, check и больше ничего не должно быть
+//должно быть i, которая идет по кольцу, то есть для трех файлов i = (i+1)%3 до тех пор, пока f0 не закончится

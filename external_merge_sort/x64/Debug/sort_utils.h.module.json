@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\sort_utils.h.obj",
+            "outputs": [
+                "E:\\с# CODES\\external_merge_sort\\external_merge_sort\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "E:\\с# CODES\\external_merge_sort\\external_merge_sort\\x64\\Debug\\sort_utils.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "sort_utils.h",
+                    "source-path": "e:\\с# codes\\external_merge_sort\\external_merge_sort\\sort_utils.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
